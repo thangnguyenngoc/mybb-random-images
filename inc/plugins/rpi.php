@@ -84,11 +84,7 @@ function rpi_deactivate()
 //Function of rpi really easy (As easy as hot cake)
 function rpi()
 {
-    require_once MYBB_ROOT.'/firephpcore/FirePHP.class.php';
-    require_once MYBB_ROOT.'/firephpcore/fb.php';
     global $db, $theme, $mybb, $templates, $lang, $rpif, $rpih,$rpi;
-    ob_start();
-    $firephp = FirePHP::getInstance(true);
     $lang->load("rpi");
     if($mybb->settings['showrpi'] != 0)
     {
